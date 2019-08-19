@@ -1,0 +1,328 @@
+*{
+    outline: 0 !important;
+    font-family: 'Poiret One', cursive !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+html{
+    overflow-x: hidden;
+    zoom:57%;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+body {
+    background: url(../view/background.png);
+    background-size: cover;
+
+}
+.content {
+    width: 1920px;
+    height: 1386px;
+    position: relative;
+    margin: 0px auto;
+    max-width: 90%;
+}
+.logo {
+    position:absolute;
+    left: 90px;
+    top: 28px;
+}
+img {
+    width:466px;
+    height:235px;
+}
+header {
+    position: absolute;
+    left: 712px;
+    top: 110px;
+}
+.advertising {
+    position: absolute;
+    left: 720px;
+    top: 290px;
+}
+.terms {
+    position: absolute;
+    left: 782px;
+    top: 1117px;
+}
+.register_form {
+    position: absolute;
+    left: 43px;
+    top: 291px;
+}
+.register_buttons {
+    position: absolute;
+    left: 45px;
+    top: 1130px;
+}
+.register_button:active{
+    box-shadow: 0 2px 0 #006599;
+    background: rgba(255,163,66,0.8);
+    transform: translateY(3px);
+}
+
+/*Стили для header*/
+.header_button {
+    width: 1168px;
+    height: 132px;
+    float: right;
+    font-size: 0;
+}
+.button {
+    width: 194px;
+    height:  130px;
+    max-width: 195px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    flex-direction: row;
+    font-size: 20px;
+}
+.button:hover {
+    background: rgba(203, 175, 0, 0.5);
+    transition: all 0.5s ease-in;
+}
+.button_credit {
+    border-radius: 20px 0 0 20px;
+}
+.button_card {
+    position: relative;
+    bottom: 11px;
+}
+.button_registration {
+    width: 194px;
+    background: rgba(203, 175, 0, 0.5);
+}
+.button_language {
+    border-radius: 0 20px 20px 0;
+}
+/*Конец стилей header*/
+
+/*Стили для чекбокса с условиями регистрации*/
+.terms {
+    width: 1168px;
+    height: 80px;
+}
+.checkbox__input {
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-top: 40px;
+    border: none;
+    background-color: white;
+}
+.terms-table__left {
+    margin-left: 104px;
+}
+.terms-table__right {
+    width: 710px;
+    height: 60px;
+    float: right;
+    margin-right: 225px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    word-spacing: 4px;
+}
+.link {
+    color: rgb(255,171,56);
+    text-decoration: none;
+}
+/*Конец стилей для чекбокса*/
+
+/*Стили для рекламного блока*/
+.advertising {
+    width: 1153px;
+    height: 790px;
+    border: 0.5px solid white;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+.information-table__left {
+    width: 150px;
+    height: 800px;
+    float: left;
+}
+.image {
+    width: 95px;
+    height: 95px;
+    margin-top: 78px;
+    margin-left: 70px;
+    filter: invert(1);
+}
+.img_logo:hover{
+    filter: invert(1);
+}
+.information-table__right {
+    width: 920px;
+    height: 800px;
+    float: right;
+}
+.advertising-type {
+    width: 818px;
+    height: 148px;
+}
+.title-text {
+    color: white;
+    font-size: 62px;
+    font-weight: 100;
+    font-family: 'Poiret One', cursive;
+}
+.title-text:hover{
+    cursor: default;
+}
+.module-description {
+    color: white;
+    font-size: 32px;
+    font-weight: 50;
+    font-family: 'Poiret One', cursive;
+    margin-top: -37px;
+}
+.module-description:hover{
+    cursor: default;
+}
+.title-text:hover {
+    color: rgba(203, 175, 0, 1);
+    transition: all 0.5s ease-in;
+
+}
+/*Конец стилей рекламного блока*/
+
+/*Панель регистрации*/
+input::-webkit-input-placeholder {
+    color: white !important;
+}
+.register_form {
+    width: 600px;
+    height: 790px;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.6);
+    margin-bottom: 20px;
+}
+.title{
+    padding: 20px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.select_face{
+    padding-left: 20px;
+    height: 45px;
+    width: 550px;
+    margin-bottom: 20px;
+    color: white;
+    background: rgba(153,153,153,0.1);
+    border: none;
+    font-size: 20px;
+}
+.register_member{
+    position: relative;
+    margin-left: 25px;
+    height: 40px;
+    width: 525px;
+    margin-bottom: 20px;
+    background: rgba(153,153,153,0.1);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+}
+.register_date{
+    position: relative;
+    text-indent: 25px;
+    margin-left: 0px;
+    height: 40px;
+    width: 525px;
+    margin-bottom: 20px;
+    background: rgba(153,153,153,0.1);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+}
+.member{
+    background: rgba(153,153,153,0.9);
+    margin-left: 10px;
+    font-size: 20px;
+}
+.option_face{
+    background: rgba(153,153,153,0.9);
+    font-size: 15px;
+    font-size: 20px;
+}
+.input_name,.physical_face,.passport,.date_passport,.Identification_number,.phone_number,.card_number,.e-mail,.password,.confirm_password{
+    margin-left: 20px;
+    height: 45px;
+    width: 550px;
+    margin-bottom: 20px;
+    background: rgba(153,153,153,0.9);
+    border-radius: 7px;
+}
+.register_button{
+    height: 104px;
+    width: 597px;
+    opacity: 0.9;
+    border-radius: 10px;
+    font-size: 50px;
+    background: rgba(47,68,47,0.9);
+    color: white;
+    cursor: pointer;
+}
+.message_inn{
+    font-family: 'Comfortaa', cursive !important;
+    color: rgb(255,36,65);
+    font-size: 15px;
+    position: absolute;
+    margin-top: -33px;
+    margin-left: 10px;
+    height: 60px;
+    width: 580px;;
+    border-radius: 10px;
+}
+#message_face{
+    font-family: 'Comfortaa', cursive !important;
+    color: rgb(255,36,65);
+    font-size: 15px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -35px;
+    height: 50px;
+    width: 530px;
+    border-radius: 10px;
+}
+#message_phone{
+    font-family: 'Comfortaa', cursive !important;
+    color: rgb(255,36,65);
+    font-size: 15px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -32px;
+    height: 80px;
+    width: 550px;
+    border-radius: 10px;
+}
+.text.error {
+    font-family: 'Comfortaa', cursive !important;
+    color: rgb(255,36,65);
+    font-size: 15px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -33px;
+    height: 50px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+/*конец*/

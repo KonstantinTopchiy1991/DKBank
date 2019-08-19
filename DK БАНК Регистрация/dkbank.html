@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>MDK Bank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/dkbank.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calendar/tcal.css"/>
+</head>
+<body>
+<div class="content">
+    <div class="logo">
+        <a href="pages/mainpage.html" id="startPage">
+            <img src="view/dk-associates-t-dasarahalli-bangalore-lawyers-for-property-case-6t2b3.png" class="img_logo">
+        </a>
+    </div>
+    <header>
+        <div class="header">
+            <div class="header_button">
+                <a href="pages/kredit.html">
+                    <button type="button" class="button_credit button" id="kredit">КРЕДИТИ</button>
+                </a>
+                <a href="pages/deposit.html">
+                    <button type="button" class="button_deposit button" id="dep">ДЕПОЗИТИ</button>
+                </a>
+                <a href="pages/card.html">
+                    <button type="button" class="button_card button" id="buycard" style="bottom: 12px;">ЗАМОВИТИ КАРТУ
+                    </button>
+                </a>
+                <a href="pages/payments.html">
+                    <button type="button" class="button_payment button" id="payfor">ПЛАТЕЖІ</button>
+                </a>
+                <button type="button" class="button_registration button" id="regist">РЕЄСТРАЦІЯ</button>
+                <button type="button" class="button_language button" id="translate">УКР/ENG</button>
+            </div>
+        </div>
+    </header>
+    <div class="advertising">
+        <div class="advertising__body">
+            <div class="information-table">
+                <div class="information-table__left">
+                    <div class="image-type">
+                        <div class="image-type__1">
+                            <img class="image" src="view/security.png">
+                        </div>
+                        <div class="image-type__2">
+                            <img class="image" src="view/piggy-bank.png">
+                        </div>
+                        <div class="image-type__3">
+                            <img class="image" src="view/graph.png">
+                        </div>
+                        <div class="image-type__4">
+                            <img class="image" src="view/mobile-app.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="information-table__right">
+                    <div class="advertising-description">
+                        <div class="advertising-description__1">
+                            <div class="advertising-type">
+                                <a href="pages/reklama1.html"><h1 class="title-text" id="titleAdvertising1">
+                                    Стабільність</h1></a>
+                                <p class="module-description" id="titleAdvertising1Text">Ми працюємо на ринку України
+                                    більше 17 років</p>
+                            </div>
+                        </div>
+                        <div class="advertising-description__2">
+                            <div class="advertising-type">
+                                <a href="pages/reklama2.html"><h1 class="title-text" id="titleAdvertising2">Безпека
+                                    вкладень</h1></a>
+                                <p class="module-description" id="titleAdvertising2Text">Безпечний вивід вкладень в той
+                                    момент, коли Вам це необхідно</p>
+                            </div>
+                        </div>
+                        <div class="advertising-description__3">
+                            <div class="advertising-type">
+                                <a href="pages/reklama3.html"><h1 class="title-text" id="titleAdvertising3">Ставки від
+                                    19% річних</h1></a>
+                                <p class="module-description" id="titleAdvertising3Text">Самі високі процентні ставки на
+                                    ринку</p>
+                            </div>
+                        </div>
+                        <div class="advertising-description__4">
+                            <div class="advertising-type">
+                                <a href="pages/reklama4.html"><h1 class="title-text" id="titleAdvertising4">
+                                    Обслуговування 24/7</h1></a>
+                                <p class="module-description" id="titleAdvertising4Text">Зручний клієнт-банк додаток
+                                    завжди під рукою</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="terms">
+        <div class="terms__body">
+            <div class="terms-table">
+                <div class="terms-table__left">
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox__input" id="checkbox">
+                    </div>
+                </div>
+                <div class="terms-table__right">
+                    <p class="terms-information" id="terms">При реєстрації ви погоджуєтеся з <a class="link" href="pages/terms.html" target="_blank">УМОВАМИ</a>
+                        банку ДКБанк</p>
+                    <p style="color: rgb(255,37,22);" hidden id="errorCheckbox">Ви погоджуєтесь з умовами банку? </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="register_form">
+        <div class="registerForm_header">
+            <div class="title" id='titleRes'>Реєстрація Клієнта</div>
+        </div>
+        <div class="registerForm_body">
+            <div class="input_name" id="_Name_klient">
+                <input class="register_member" maxlength="90" type="" name="" placeholder="П.І.Б.*"
+                       id="name_and_Firstname" title="Введіть прізвище, ім’я  та по-батькові  через пробіл">
+                <p class="message_inn"></p>
+            </div>
+            <div class="passport" id="_id_passport">
+                <input class="register_member" type="" maxlength="8" name="" placeholder="Паспорт: серія, номер*"
+                       id="pasportNameForTranslate" title="Введіть серію і номер паспорта без пробілу">
+                <p class="message_inn"></p>
+            </div>
+            <div class="date_passport" id="_date_passport">
+                <form action="#">
+                    <input class="register_date tcal" input type="text" name="date" value=""
+                           placeholder="Дата видачі паспорта*" /
+                    id="placeOfBirth" min="1900-01-01" max="2017-01-01" title="Оберіть дату отримання паспорту">
+                    <p class="message_inn"></p>
+                </form>
+            </div>
+            <div class="Identification_number" id="_Identification_number">
+                <input class="register_member" id="inn" type="number" max="10" placeholder="РНОКПП клієнта*"
+                       title="Введіть ідентифікаційний код без крапок, ком або інших знаків">
+                <p class="message_inn"></p>
+            </div>
+            <div class="physical_face" id="_face" title="Оберіть один з варіантів">
+                <select class="select_face" id="_select_face">
+                    <option selected disabled hidden="" class="option_face" value="Фізична особа / Юридична особа"
+                            id="option_face">Фізична особа / Юридична особа*
+                    </option>
+                    <option class="option_face" value="Фізична особа" id="_select_face_value1">Фізична особа</option>
+                    <option class="option_face" value="Юридична особа" id="_select_face_value2">Юридична особа</option>
+                </select>
+                <p id="message_face"></p>
+            </div>
+            <div class="phone_number" id="_phone_number">
+                <input class="register_member" id="phone" type="text"
+                       onfocus="new CommonRegisterForm().maskPhone()"
+                       placeholder="Номер телефону"
+                       title="Введіть номер свого телефону без міжнародного коду, без тире, без пробілів">
+                <p id="message_phone"></p>
+            </div>
+            <div class="card_number" id="_card_number">
+                <input type="number" class="register_member" id="cardNumber" placeholder="Номер карти" max="16"
+                       title="Введіть номер карти - 16 цифр">
+                <span class="text"></span>
+            </div>
+            <div class="e-mail" id="_email_value">
+                <input class="register_member" id="email" maxlength="254" type="e-mail" placeholder="Введіть Email*"
+                       title="Введіть електрону адресу">
+                <span class="text"></span>
+            </div>
+            <div class="password" id="password_value">
+                <input class="register_member" id="password_length" type="text" placeholder="Новий пароль*"
+                       title="Пароль повинен складатися мінімум з 8 символів і мати мінімум одну велику, маленьку літери і мінімум одну цифру">
+                <span class="text"></span>
+            </div>
+            <div class="confirm_password" id="check_password_value">
+                <input class="register_member" id="check_Password" type="text" placeholder="Підтвердження пароля*"
+                       title="Повторіть пароль">
+                <span class="text"></span>
+            </div>
+        </div>
+    </div>
+    <div class="register_buttons">
+        <button type="submit" class="register_button" id="_register_button">Зареєструватися</button>
+    </div>
+</div>
+
+<script src="https://unpkg.com/imask"></script>
+<script src="src/model/commonValidation.js" defer></script>
+<script src="src/model/validationUkrainne.js" defer></script>
+<script src="src/model/validationEnglish.js" defer></script>
+<script src="src/model/cookie.js" defer></script>
+<script src="src/controller/DKBank_lang.js" defer></script>
+<script src="src/controller/DKBank_controller.js" defer></script>
+<script src="src/DKBank_init.js" defer></script>
+
+<script src="calendar/tcal_en.js" defer></script>
+</body>
